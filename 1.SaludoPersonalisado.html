@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1tarea.css">
+</head>
+<body>
+    <div id="box">
+        <h1 id="titulo">Bienvenido ingrese su nombre</h1>
+        <form action="">
+            <input type="text" id="nombre">
+            <input type="button" value="Enviar" id="enviar" onclick="capturarNombre()">
+        </form>
+        <div id="mostrarNombre"></div>
+        <script>
+            function capturarNombre(){
+                let nombre = document.getElementById("nombre").value
+                var nom = "Su nombre es: " + nombre
+                document.getElementById("mostrarNombre").innerHTML = nom
+            }
+        </script>
+    </div>
+</body>
+</html>

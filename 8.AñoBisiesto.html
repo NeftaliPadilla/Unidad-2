@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="8tarea.css">
+</head>
+<body>
+    <div id="box">
+        <h1>comprobacion de año bisiesto</h1>
+        <label for="num">Introduce un año:</label>
+        <input type="text" id="num">
+        <button onclick="comprovacion()">comprovacion</button>
+        <div id="resultado"></div>
+    
+        <script>
+            function comprovacion(){
+                const num = parseInt(document.getElementById("num").value);
+                const resultadoDiv = document.getElementById("resultado");
+
+                if(num % 400 === 0 || (num % 4 === 0 && num % 100 !== 0)){
+                    resultado.textContent=`El año ${num} es bisiesto.`;
+                }else{
+                    resultado.textContent=`El año ${num} no es bisiesto.`;
+                }
+            }
+        </script>
+        </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    background: url(123.jpg);
+}
+#box{
+    background-color: white;
+    margin:100px;
+    padding:100px;
+    border:5px solid;
+    border-radius: 50px;
+    box-shadow: black;
+    text-align: center;
+}

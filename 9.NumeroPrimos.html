@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="9tarea.css">
+</head>
+<body>
+    <div id="box">
+        <h1>comprobacion de año bisiesto</h1>
+        <label for="num">Introduce un rango:</label>
+        <input type="text" id="num">
+        <button onclick="primoss()">verificar</button>
+        <div id="resultado"></div>
+    
+        <script>
+            const primos = [];
+            function primoss(){
+                const num = parseInt(document.getElementById("num").value);
+                const resultadoDiv = document.getElementById("resultado");
+
+                for(let i =1; i<=num;i++){
+                    let ceros = 0;
+                    for(let j =1; j<=i;j++){
+                        if (i % j === 0){
+                            ceros++;
+                        }
+                    }
+                    if(i===0 || i===1){
+                       primos[i] = null;
+                    }else if(ceros === 2){
+                        primos[i] = i;
+                    }
+                }
+                resultado.textContent=`los numero primos dentro del rango son: ${primos}`;
+            }
+        </script>
+        </div>
+</body>
+</html>
