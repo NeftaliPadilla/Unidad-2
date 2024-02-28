@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar clase</title>
+    <style>
+        div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        .miclase{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="midiv"></div>
+    <button onclick="agregarClase()">Cambiar</button>
+    <script>
+        function agregarClase(){
+            let div = document.getElementById('midiv')
+         div.classList.add('miclase')
+        }
+    </script>
+</body>
+</html>
